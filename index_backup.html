@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yagev Ben Itzhak | Global Organizational Consultant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Yagev<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Track Record</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+                <!-- Language Switcher Dropdown -->
+                <li class="lang-dropdown">
+                    <a href="#" class="lang-toggle"><i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size:0.7em;"></i></a>
+                    <div class="lang-menu">
+                        <a href="index.html" class="active">English</a>
+                        <a href="index-he.html">עברית</a>
+                        <a href="index-es.html">Español</a>
+                        <a href="index-pt.html">Português</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="subtitle">Solving Complex Leadership Challenges</p>
+            <h1>Navigating complexity. Driving sustainable growth.</h1>
+            <p class="hero-desc">I help organizations, teams, and executives navigate rapid growth, structural changes, and operational friction to thrive in unpredictable environments.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="primary-btn">How I Help Clients</a>
+                <a href="#contact" class="secondary-btn">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Marquee -->
+    <section id="trusted">
+        <p class="trusted-title">TRUSTED BY EXECUTIVES WORLDWIDE</p>
+        <div class="logo-marquee">
+            <span>Nestlé</span>
+            <span>Applied Materials</span>
+            <span>ICL</span>
+            <span>Palo Alto Networks</span>
+            <span>eToro</span>
+            <span>SodaStream</span>
+            <span>Taboola</span>
+            <span>Cisco</span>
+            <span>Johnson & Johnson</span>
+        </div>
+    </section>
+
+    <!-- Main Services Area -->
+    <section id="services" class="bg-light">
+        <div class="section-header">
+            <h2>Core Expertise</h2>
+            <div class="divider"></div>
+            <p>Tailored strategic interventions designed for high-growth startups and complex global enterprises.</p>
+        </div>
+        
+        <div class="services-grid">
+            
+            <!-- Executive Coaching -->
+            <div class="service-card">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3>Executive Coaching</h3>
+                <p><strong>Short-Term, High-Impact Coaching:</strong> I specialize in concentrated, highly effective short-term coaching engagements designed to rapidly expand executive bandwidth under intense pressure. Through tailored 1:1 sessions, I help established leaders break through operational bottlenecks, enhance team alignment, and refine their strategic mindset.</p>
+                
+                <div class="service-examples" style="margin-top: 20px;">
+                    <h4 style="font-size: 0.85rem; color: #64748b; margin-bottom: 8px; text-transform: uppercase;">Executives Coached At:</h4>
+                    <div class="scrolling-text-marquee">
+                        <div class="scrolling-text-content">
+                            <span>Taboola</span> &bull; <span>Verbit</span> &bull; <span>Idomoo</span> &bull; <span>Devo</span> &bull; <span>Fundbox</span> &bull; <span>MIND</span> &bull; <span>RAD</span> &bull; <span>IDE</span> &bull; <span>Trax</span> &bull; <span>Palo Alto Networks</span> &bull; <span>Aqua</span> &bull; <span>Igenio</span> &bull; <span>Seen</span> &bull; <span>Surtidora</span> &bull; <span>Phibro</span> &bull; <span>GreenOnix</span> &bull; <span>MYL</span> &bull; <span>Simplywood</span> &bull; <span>Netafim</span> &bull; <span>Strauss Water</span> &bull; <span>Riskified</span> &bull; <span>Outbrain</span> &bull; <span>eToro</span> &bull; <span>Cognyte</span> &bull; <span>AudioCodes</span> &bull;
+                            <!-- Duplicate -->
+                            <span>Taboola</span> &bull; <span>Verbit</span> &bull; <span>Idomoo</span> &bull; <span>Devo</span> &bull; <span>Fundbox</span> &bull; <span>MIND</span> &bull; <span>RAD</span> &bull; <span>IDE</span> &bull; <span>Trax</span> &bull; <span>Palo Alto Networks</span> &bull; <span>Aqua</span> &bull; <span>Igenio</span> &bull; <span>Seen</span> &bull; <span>Surtidora</span> &bull; <span>Phibro</span> &bull; <span>GreenOnix</span> &bull; <span>MYL</span> &bull; <span>Simplywood</span> &bull; <span>Netafim</span> &bull; <span>Strauss Water</span> &bull; <span>Riskified</span> &bull; <span>Outbrain</span> &bull; <span>eToro</span> &bull; <span>Cognyte</span> &bull; <span>AudioCodes</span> &bull;
+                        </div>
+                    </div>
+                </div>
+
+                <button class="secondary-btn toggle-testimonials-btn" onclick="toggleAccordion(this)">What Clients Say</button>
+                <div class="hidden-testimonials">
+                    <div class="testimonials-vertical">
+                        <blockquote class="inline-quote">
+                            "Sharing my professional situation with my coach and getting super valuable feedback... My experience was 100 out of 10!"
+                            <footer>– Alba Martinez, VP HR, Emburse</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "Yagev's listening skills, and his ability to extract the real issue from the content is amazing... Getting 'assignments' and issues to evaluate between sessions helps reap immediate benefit."
+                            <footer>– Eloise Ann Friedman, Director, Outbrain</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "Yagev gave me amazing support with the great challenges that I'm facing at work. He is very smart, to the point, empathic, and action oriented."
+                            <footer>– Hila Lavie, VP Design, Riskified</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "I'd also like to highlight Yagev's ability to listen and drill down into the details. I'd recommend Yagev if you want to take your professional career to the next step."
+                            <footer>– Sergio Bellido, VP Product Mgt, DEVO</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Change Management & Strategy -->
+            <div class="service-card">
+                <i class="fa-solid fa-arrows-spin"></i>
+                <h3>Change Management & Strategy</h3>
+                <p><strong>The Approach:</strong> Successful change requires treating structural realignment and human dynamics as equal halves of the same equation. I specialize in building data-driven strategies that your people are genuinely motivated to execute, removing friction from corporate transitions.</p>
+                
+                <button class="secondary-btn toggle-testimonials-btn" onclick="toggleAccordion(this)" style="margin-top:auto;">What Clients Say</button>
+                <div class="hidden-testimonials">
+                    <div class="testimonials-vertical">
+                        <blockquote class="inline-quote">
+                            "Yagev did a fantastic job involving people, helping them surface problems and creating energy for change... His involvement had a very substantial impact on generating improved business results."
+                            <footer>– Eugenio Minvielle, Former President, Nestle France</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "His ability to balance soft skills with business deliverable hard facts is quite unique. He motivates leaders to deliver by themselves and with their teams."
+                            <footer>– Stefan Borgas, President & CEO, RHI AG</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "He helped our bank in different projects. He is an expert in strategy design, cultural change, organizational development and M&As... A true privilege."
+                            <footer>– Carlos Nunez Urquiza, Former Top Executive, Banamex</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "Understanding cultural differences and listening to people is the foundation for successful organization development... A wingman you love to have when you start up new organizations."
+                            <footer>– Andreas Heyl, VP R&D, ICL Food Specialties</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post-Merger Integration -->
+            <div class="service-card">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h3>Post-Merger Integration (PMI)</h3>
+                <p>Mergers fail for diverse reasons, mostly lack of alignment. Having successfully led over 60 global M&A integrations, I specialize in the crucial human elements of due diligence, structured cultural alignment, executing synergistic operations, and ensuring key talent retention during high-risk transitions.</p>
+                
+                <button class="secondary-btn toggle-testimonials-btn" onclick="toggleAccordion(this)" style="margin-top:auto;">What Clients Say</button>
+                <div class="hidden-testimonials">
+                    <div class="testimonials-vertical">
+                        <blockquote class="inline-quote">
+                            "Yagev is a source of wisdom and knowledge in everything related to M&A, PMI, and business development. I highly recommend every manager not to go for any M&A process without Yagev on his side."
+                            <footer>– Dror Pockard, Former CEO, e-Glue (sold to Nice)</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "Yagev was hired to help in a complex process of a Merger and Acquisition involving the purchase of a European/North-American corporation... potential difficulties were controlled and possible pitfalls were avoided."
+                            <footer>– Micha Avni, Due Diligence of Telecom Companies</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership Development -->
+            <div class="service-card">
+                <i class="fa-solid fa-users-rays"></i>
+                <h3>Leadership Development</h3>
+                <p><strong>Imperfectly Great Leadership (IGL):</strong> After decades of coaching executives, I developed the IGL methodology. It moves away from idealized, "perfect" leadership traits and focuses on how leaders <em>actually</em> behave under immense pressure. By recognizing our default stress responses, we can develop adaptive, resilient leadership styles that thrive in chaos.</p>
+                
+                <div class="igl-actions" style="margin: 20px 0; display: flex; flex-direction: column; gap: 10px;">
+                    <a href="../leadership-diagnostic/index.html" class="primary-btn" style="text-align: center; justify-content: center;"><i class="fa-solid fa-clipboard-list"></i> Take the Free IGL Diagnostic</a>
+                    <a href="#" class="secondary-btn" style="color: var(--secondary); border-color: var(--secondary); text-align: center; justify-content: center;"><i class="fa-solid fa-video"></i> View Udemy IGL Course</a>
+                </div>
+
+                <button class="secondary-btn toggle-testimonials-btn" onclick="toggleAccordion(this)">What Clients Say</button>
+                <div class="hidden-testimonials">
+                    <div class="testimonials-vertical">
+                        <blockquote class="inline-quote">
+                            "In 25 years of CEO, EVP, Senior Executive, this was the best program I have ever attended. Fast, easy, delivered result; action oriented – not just info but action."
+                            <footer>– Kevin Browett, CEO, JRM</footer>
+                        </blockquote>
+                        <blockquote class="inline-quote">
+                            "This program has an excellent structure; it is concrete, clear, focused on results and dynamic. It allows for a follow-up structure, creates continuity and does not end as merely another course."
+                            <footer>– Alfonso Gonzalez, Director, Nestle</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workshops and Lectures -->
+            <div class="service-card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>Workshops & Lectures</h3>
+                <p>Interactive, high-energy group sessions designed to align teams, break down silos, and implement transformative strategic frameworks on a wide scale.</p>
+                
+                <div style="padding: 15px; background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 8px; margin-top: 15px; color: #64748b; font-style: italic; text-align: center; font-size: 0.9rem;">
+                    <i class="fa-solid fa-hourglass-half" style="margin-bottom: 5px; color: #94a3b8;"></i><br>
+                    Detailed workshop syllabi and group testimonials coming shortly.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Background Experience -->
+    <section id="about" style="border-top: 1px solid #e2e8f0;">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>The Expertise Behind The Services</h2>
+                <div class="divider" style="margin: 20px 0;"></div>
+                <p>Holding an <strong>MA in Organizational Psychology</strong> and bringing over two decades of front-line corporate experience across the USA, Europe, Latin America, and Asia.</p>
+                <div class="timeline" style="margin-top: 40px;">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Executive Coach & Consultant</h3>
+                            <p>Designing complex change interventions during M&A transitions and high growth for leading startups.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2014 - 2020</div>
+                        <div class="timeline-content">
+                            <h3>VP, L&OD and Change Management</h3>
+                            <p>Led global transformation initiatives across IT, HR, CTO, and Finance functions for ICL ($5.5B Enterprise).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/about-img.png" alt="Strategic Growth" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                
+                <div class="stats-row" style="margin-top: 30px; justify-content: center;">
+                    <div class="stat text-center">
+                        <span class="stat-num">25+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat text-center">
+                        <span class="stat-num">60+</span>
+                        <span class="stat-label">M&A</span>
+                    </div>
+                    <div class="stat text-center">
+                        <span class="stat-num">4</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Global Testimonial Wall -->
+    <section id="testimonials" class="bg-light">
+        <div class="section-header">
+            <h2>Track Record of Excellence</h2>
+            <div class="divider"></div>
+            <p>Direct feedback from leaders worldwide.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="quote">"I had the great honor to work directly with Yagev on a major company turnaround in the US... thanks to his intense highly effective leadership we were able to make solid, well-planned decisions."</p>
+                <h4 class="author">Kevin Browett</h4>
+                <p class="title">Former CEO, MIND / JRM</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"In my work with top management teams, Yagev did a fantastic job involving people, helping them surface problems and creating energy for change."</p>
+                <h4 class="author">Eugenio Minvielle</h4>
+                <p class="title">Former President, Nestle France</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Yagev's contribution was integral to the success of this high return-on-investment engagement. Our client achieved all of their major objectives, and produced measurable and lasting changes."</p>
+                <h4 class="author">Robert Johnson</h4>
+                <p class="title">Managing Partner, Shoreline Partners</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Yagev is, without a doubt, a great leader and excellent strategic thinker. He is talented at breaking a problem down into constituent parts and brings his significant creativity to bear."</p>
+                <h4 class="author">Miguel Schwartz</h4>
+                <p class="title">VP Account Management, Riskified</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"He helped us with a strategic change program... Yagev is committed to accomplish clients’ needs as he helps you identify your opportunity areas as a company and as a person. Excellent coach."</p>
+                <h4 class="author">Carlos Yunes</h4>
+                <p class="title">Director de operaciones, Solder</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"With Yagev's help I was able to lead innovative and game changing ideas into reality... Yagev is familiar with the Hi-Tech challenges and able to see both the people and the company vision as holistic view."</p>
+                <h4 class="author">Nir Makmal</h4>
+                <p class="title">Chief Architect, Amdocs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 40px; max-width: 1000px; margin: 0 auto; background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+            <div class="contact-info-panel" style="background: var(--secondary); color: var(--white); padding: 50px; flex: 1; min-width: 300px;">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;">Let's Talk Strategy.</h2>
+                <p style="color: #94a3b8; margin-bottom: 40px;">If your company is experiencing rapid growth, struggling with integration, or needs a steady hand in complex transformations, contact me directly.</p>
+                
+                <div class="contact-detail" style="margin-bottom: 20px;">
+                    <i class="fa-solid fa-envelope" style="color: var(--primary-light); font-size: 1.5rem; margin-right: 15px;"></i>
+                    <span style="font-weight: 500;">Yagev@sg-ltd.com</span>
+                </div>
+                <div class="contact-detail" style="margin-bottom: 20px;">
+                    <i class="fa-solid fa-phone" style="color: var(--primary-light); font-size: 1.5rem; margin-right: 15px;"></i>
+                    <span style="font-weight: 500;">+972-50-855-4755</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fa-brands fa-linkedin" style="color: var(--primary-light); font-size: 1.5rem; margin-right: 15px;"></i>
+                    <a href="https://linkedin.com/in/yagevbenitzhak" style="color: var(--white); text-decoration: none; font-weight: 500;">linkedin.com/in/yagevbenitzhak</a>
+                </div>
+            </div>
+            
+            <div class="contact-form-panel" style="padding: 50px; flex: 1; min-width: 300px;">
+                <h3 style="margin-bottom: 20px; color: var(--secondary);">Send an Inquiry</h3>
+                <form name="consulting-contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+                    <input type="hidden" name="form-name" value="consulting-contact" />
+                    <input type="text" name="name" placeholder="Full Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;">
+                    <input type="email" name="email" placeholder="Email Address" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;">
+                    <input type="text" name="company" placeholder="Company Name" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;">
+                    <textarea name="message" placeholder="How can I help you?" rows="4" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;"></textarea>
+                    <button type="submit" class="primary-btn" style="width: 100%;">Submit Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #020617; text-align: center; padding: 30px; color: #475569;">
+        <p>&copy; 2026 Yagev Ben Itzhak. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

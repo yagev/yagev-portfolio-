@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "database"
+    label: "Site Database"
+    files:
+      - label: "Resource Center Links"
+        name: "resources"
+        file: "assets/resources.json"
+        fields:
+          - label: "Resource Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Resource Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["Leadership Development", "Change Management", "Post-Merger Integration"]}
+              - {label: "File Upload", name: "filepath", widget: "file"}

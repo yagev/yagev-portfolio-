@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperfectly Great Leadership Diagnostic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Landing View -->
+        <div id="landing-view" class="view active">
+            <h1 id="app-title">Leadership Diagnostic</h1>
+            <p id="app-desc">Loading description...</p>
+            
+            <div class="user-info-form">
+                <input type="text" id="user-name" placeholder="Your Full Name" required />
+                <input type="email" id="user-email" placeholder="Your Email Address" required />
+                <p id="form-error" class="error-msg" style="display: none;">Please enter both your name and a valid email to begin.</p>
+            </div>
+
+            <button id="start-btn" class="primary-btn">Start Assessment</button>
+        </div>
+
+        <!-- Question View -->
+        <div id="question-view" class="view">
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <p id="progress-text">Question 1 of 30</p>
+            
+            <div id="quiz-anim-container" class="quiz-content">
+                <div class="question-container">
+                    <h3 id="dimension-name">Dimension</h3>
+                    <h2 id="question-text">Question text goes here</h2>
+                </div>
+
+                <div id="options-container" class="options-grid">
+                    <!-- Options injected by JS -->
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="secondary-btn" disabled>Previous Question</button>
+            </div>
+        </div>
+
+        <!-- Results View -->
+        <div id="results-view" class="view">
+            <h2>Your Leadership Assessment</h2>
+            
+            <!-- Conditional Profile rendered here -->
+            <div id="profile-container" style="margin-bottom: 30px; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 5px solid var(--primary-color);">
+                <h3 id="profile-title" style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 12px; margin-top: 0;">Profile</h3>
+                <div id="profile-desc" style="white-space: pre-wrap; font-size: 1rem; color: var(--text-main); margin-bottom: 20px; line-height: 1.6;"></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                    <p style="margin-bottom: 8px;"><strong>Development Focus:</strong> <span id="profile-dev"></span></p>
+                    <p style="margin-bottom: 8px;"><strong>30-Day Action:</strong> <span id="profile-action"></span></p>
+                    <p style="margin: 0;"><strong>Reflection:</strong> <span id="profile-refl"></span></p>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 15px; text-align: center; color: var(--text-light); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Category Breakdown (Averages out of 5)</h3>
+            <div id="chart-container" class="results-grid">
+                <!-- Results injected by JS -->
+            </div>
+
+            <div class="navigation-buttons" style="justify-content: center; gap: 16px; margin-top: 20px;">
+                <button id="download-pdf-btn" class="primary-btn">Download PDF Report</button>
+                <button id="restart-btn" class="secondary-btn">Take Assessment Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Netlify Hidden Form for Data Collection -->
+    <form name="leadership-results" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="results"></textarea>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
