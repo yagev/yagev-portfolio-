@@ -612,4 +612,5 @@ html[dir="rtl"] .profile-inline-img {
     .about-container, .service-detailed-block { flex-direction: column; }
     .testimonials-row { grid-template-columns: 1fr; }
     .nav-links { display: none; }
+    .mobile-lang-switcher { display: block !important; }
 }
